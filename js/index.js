@@ -45,15 +45,18 @@ homeFocus.addEventListener("focus", event => {
 });
 
 // // 6) resize event
-// window.addEventListener("resize", event => {
-//     var w = document.documentElement.clientWidth;
-//     var h = document.documentElement.clientHeight;
-//     alert(`Width:${w} Height: ${h}`);
+window.addEventListener("resize", event => {
+    var w = document.documentElement.clientWidth;
+    var h = document.documentElement.clientHeight;
+    alert(`Width:${w} Height: ${h}`);
 
-// });
+});
 
 // 7) scroll event
 
+window.addEventListener("scroll", event => {
+    console.log("Scrolling the website");
+})
 
 // const arrowTop = document.createElement("div");
 // arrowTop.onclick = function () {
@@ -99,6 +102,9 @@ const doubleHeader = document.querySelector("h2");
 doubleHeader.addEventListener("dblclick", event => {
     doubleHeader.style.color = "orange"
 });
+
+
+// 10) drag and drop event
 
 
 
